@@ -22,12 +22,12 @@ st.markdown("---")
 col1, col2 = st.columns(2)
 
 with col1:
-    income = st.number_input("💵 Monthly Income (₹)", min_value=0, value=70000, step=1000)
-    goal = st.text_input("🎯 Financial Goal", "iPhone 16")
-    goal_price = st.number_input("💰 Goal Amount (₹)", min_value=0, value=80000, step=1000)
+    income = st.number_input("💵 Monthly Income (₹)", min_value=0, value=0, step=1000)
+    goal = st.text_input("🎯 Financial Goal")
+    goal_price = st.number_input("💰 Goal Amount (₹)", min_value=0, value=0, step=1000)
 
 with col2:
-    expenses = st.number_input("🧾 Monthly Expenses (₹)", min_value=0, value=40000, step=1000)
+    expenses = st.number_input("🧾 Monthly Expenses (₹)", min_value=0, value=0, step=1000)
     risk = st.selectbox("⚖️ Risk Level", ["Low", "Medium", "High"])
 
 # ------------------ AI FUNCTION ------------------
